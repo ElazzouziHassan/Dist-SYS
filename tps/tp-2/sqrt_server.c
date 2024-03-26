@@ -5,15 +5,14 @@
  */
 
 #include "sqrt.h"
+#include <math.h>
 
-float *
-sqrt_1_svc(number *argp, struct svc_req *rqstp)
-{
-	static float  result;
-
-	/*
-	 * insert server code here
-	 */
-
-	return &result;
+float *ksqrt_1_svc(float *argp, struct svc_req *rqstp) {
+    static float result;
+    if (*argp < 0) {
+        result = -1; 
+    } else {
+        result = sqrt(*argp);
+    }
+    return &result;
 }

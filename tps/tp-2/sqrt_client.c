@@ -22,6 +22,8 @@ sqrt_prog_1(char *host)
 	}
 #endif	/* DEBUG */
 
+	printf("Enter a number: ")
+	scanf("%d", &sqrt_1_arg.x)
 	result_1 = sqrt_1(&sqrt_1_arg, clnt);
 	if (result_1 == (float *) NULL) {
 		clnt_perror (clnt, "call failed");

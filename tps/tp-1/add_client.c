@@ -23,9 +23,9 @@ add_prog_1(char *host)
 #endif	/* DEBUG */
 
 	printf("Saisir un 1er entier: ");
-	scanf("%d", &add_1_arg.nbr1);
+	scanf("%d", &add_1_arg.a);
 	printf("Saisir un 2eme entier: ");
-	scanf("%d", &add_1_arg.nbr2);
+	scanf("%d", &add_1_arg.b);
 
 	result_1 = add_1(&add_1_arg, clnt);
 	if (result_1 == (int *) NULL) {

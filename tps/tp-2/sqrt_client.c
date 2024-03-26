@@ -27,6 +27,8 @@ sqrt_prog_1(char *host)
 	result_1 = sqrt_1(&sqrt_1_arg, clnt);
 	if (result_1 == (float *) NULL) {
 		clnt_perror (clnt, "call failed");
+	}else{
+		printf("La racine caree de %d est: %d", sqrt_1_arg.x,*result_1);
 	}
 #ifndef	DEBUG
 	clnt_destroy (clnt);

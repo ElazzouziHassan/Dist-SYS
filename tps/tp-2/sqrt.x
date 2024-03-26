@@ -1,6 +1,6 @@
 struct number {
   float x;
-}
+};
 
 program SQRT_PROG {
   version SQRT_VERS {
